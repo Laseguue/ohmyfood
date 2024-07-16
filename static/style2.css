@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(246, 246, 246, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.page-daccueil {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1080px;
+}
+
+.page-daccueil .pied-de-page {
+  width: 100%;
+  background-color: rgba(53, 53, 53, 1);
+}
+
+.page-daccueil .footer-carde {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.page-daccueil .logo-ohmyfood {
+  flex: 1 1 100%;
+  max-width: 8.6875rem;
+  margin-bottom: 1rem;
+}
+
+.page-daccueil .liens {
+  display: flex;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.4375rem;
+}
+
+.page-daccueil .div-2 {
+  position: relative;
+  width: 12rem;
+  height: 1.1875rem;
+  margin-right: -0.125rem;
+}
+
+.page-daccueil .texte-wrapper-10 {
+  position: absolute;
+  width: 10.5rem;
+  top: 0;
+  left: 1.375rem;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page-daccueil .vecteur {
+  width: 0.6875rem;
+  top: 0.125rem;
+  position: absolute;
+  height: 0.8125rem;
+  left: 0;
+}
+
+.page-daccueil .vecteur-2 {
+  width: 0.75rem;
+  top: 0.25rem;
+  position: absolute;
+  height: 0.8125rem;
+  left: 0;
+}
+
+.page-daccueil .texte-wrapper-11 {
+  width: 8.125rem;
+  height: 1.25rem;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page-daccueil .en-tête {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.page-daccueil .en-tête-2 {
+  height: 3.9375rem;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-daccueil .fleche-retour {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.page-daccueil .logo-ohmyfood-2 {
+  width: 12.3125rem;
+  height: 2.3125rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-restaurent {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.menu-container {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(246, 246, 246, 1);
+  padding: 15px;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-container-title{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: min(100%, 290px);
+
+}
+
+.menu-title {
+  color: #101010;
+  font-size: 26px;
+  font-family: Shrikhand;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: start;
+}
+
+.section-container {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.section-title::after {
+  content: '';
+  margin-top: 5px;
+  display: block;
+  max-width: 30px;
+  border-bottom: 2px solid #99E2D0;
+  bottom: 0;
+  left: 0;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 62px;
+  border-radius: 20px;
+  background: var(--Background, #F6F6F6);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  display: flex;
+    flex-direction: column;
+}
+
+.dish-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dish-title {
+  color: black;
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin-bottom: 7px;
+}
+
+.dish-description {
+  color: black;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 300;
+  word-wrap: break-word
+}
+
+.dish-description:last-child {
+  text-align: end;
+  color: #353535;
+  font-size: 15.04px;
+  font-family: Roboto;
+  font-weight: 700;
+  word-wrap: break-word
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn-commander {
+  all: unset;
+  box-sizing: border-box;
+  width: 186px;
+  height: 50px;
+  border-radius: 1.5625rem;
+  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 217) 100%);
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  font-style: normal;
+}
+
+.btn-commander:hover {
+  background-color: #e83770;
+}
+
+@media (min-width: 575px) {
+  .page-daccueil .pied-de-page {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .page-daccueil .footer-carde {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: 1080px;
+  }
+
+  .page-daccueil .logo-ohmyfood {
+    order: 4;
+    margin: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-daccueil .footer-carde {
+    align-items: flex-start;
+  }
+
+  .page-daccueil .logo-ohmyfood {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .page-daccueil .liens {
+    display: flow;
+    order: 2;
+    justify-content: flex-start;
+  }
+  
+  .page-daccueil .fleche-retour {
+    left: 0.5rem;
+  }
+}
