@@ -167,6 +167,15 @@ a {
   padding-left: 25px;
 }
 
+.cartes .rectangle .icone {
+  filter: grayscale(100%); /* Toutes les icônes sont grisées par défaut */
+  transition: filter 0.3s ease-in-out;
+}
+
+.cartes .rectangle:hover .icone {
+  filter: none; /* Retour à la couleur originale (violet) au survol */
+}
+
 .page-daccueil .texte-wrapper {
   margin-left: 25px;
   margin-top: 5px;
@@ -359,37 +368,6 @@ a {
   line-height: normal;
 }
 
-.aimer {
-  position: absolute;
-  width: 1.375rem;
-  height: 1.3125rem;
-  top: 200px;
-  right: 20px;
-  transition: all 0.3s ease; // Ajout de la transition pour une animation fluide
-}
-
-.aimer-2 {
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  top: 200px;
-  right: 20px;
-  display: none;
-  transition: all 0.3s ease; // Ajout de la transition pour une animation fluide
-}
-
-.aimer:hover {
-  width: 0%;
-  height: 0%;
-  opacity: 0;
-}
-
-.aimer:hover + .aimer-2 {
-  display: block;
-  width: 1.375rem;
-  height: 1.3125rem;
-  opacity: 1;
-}
 
 .page-daccueil .hidden {
   position: absolute;
@@ -442,6 +420,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 15px;
 }
 .Sous-titre-Reserver{
   color: #000;
@@ -451,7 +430,8 @@ a {
   font-size: 18px;
   font-family: Roboto;
   font-weight: 300;
-  word-wrap: break-word
+  word-wrap: break-word;
+  margin-bottom: 15px;
 }
 
 .page-daccueil .bouton {
@@ -459,8 +439,6 @@ a {
   box-sizing: border-box;
   width: 13.625rem;
   height: 3.125rem;
-  top: 18.3125rem;
-  left: 5.125rem;
   border-radius: 1.5625rem;
   box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 217) 100%);
@@ -469,9 +447,12 @@ a {
   color: rgba(255, 255, 255, 1);
   font-size: 1rem;
   text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  font-style: normal;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-daccueil .bouton:hover {
+  background: linear-gradient(180deg, rgb(151, 99, 214) 0%, rgb(253, 151, 224) 100%);
+  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.35);
 }
 
 .page-daccueil .texte-wrapper-9 {
@@ -553,6 +534,36 @@ a {
   position: absolute;
   height: 0.8125rem;
   left: 0;
+}
+
+.svg-container {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.aimer, .aimer-vide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.aimer {
+  opacity: 0;
+  z-index: 1; 
+}
+
+.svg-container:hover .aimer-vide {
+  opacity: 0;
+}
+
+.svg-container:hover .aimer {
+  opacity: 1;
 }
 
 .page-daccueil .texte-wrapper-11 {
