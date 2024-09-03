@@ -1,110 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ohmyfood</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,500,700,500">
-    <link rel="stylesheet" href="static/style-index.css" />
-  </head>
-  <body>
-    <div id="loader" class="loader">
-      <div class="spinner"></div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ohmyfood</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,500,700,500">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand:300,400,700,500,700,500">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="static/style-index.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
   </div>
-    <div class="page-daccueil">
-      <div class="en-tête">
-        <div class="superposition-4">
-          <div class="emplacement">
-            <img class="icône-épingle" src="img/svg/icon-pin-1.svg" />
-            <div class="texte-wrapper-12">Paris, Belleville</div>
+  <div class="page-daccueil">
+    <div class="en-tête">
+      <div class="superposition-4">
+        <div class="emplacement">
+          <img class="icône-épingle" src="img/svg/icon-pin-1.svg" />
+          <div class="texte-wrapper-12">Paris, Belleville</div>
+        </div>
+        <div class="en-tête-2"><img class="logo-ohmyfood-2" src="img/svg/logo-ohmyfood-2.svg" /></div>
+      </div>
+    </div>
+    <div class="Reserver-Explorer">
+      <h2 class="Titre-Reserver">Réservez le menu qui vous convient</h2>
+      <p class="Sous-titre-Reserver">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+      <button class="bouton">Explorer nos restaurants</button>
+    </div>
+    <div class="superposition-blanc">
+      <div class="superposition">
+          <h2 class="fonctionnement">Fonctionnement</h2>
+          <div class="cartes">
+                <div class="rectangle">
+                    <img class="icone" src="img/svg/mobile-screen-button.svg" alt="Icone Choisissez un restaurant"/>
+                    <div class="texte-wrapper">Choisissez un restaurant</div>
+                    <div class="num">1</div>
+                </div>
+                <div class="rectangle">
+                    <img class="icone" src="img/svg/list-ul.svg" alt="Icone Composez votre menu"/>
+                    <div class="texte-wrapper">Composez votre menu</div>
+                    <div class="num">2</div>
+                </div>
+                <div class="rectangle">
+                    <img class="icone" src="img/svg/store.svg" alt="Icone Dégustez au restaurant"/>
+                    <div class="texte-wrapper">Dégustez au restaurant</div>
+                    <div class="num">3</div>
+                </div>
           </div>
-          <div class="en-tête-2"><img class="logo-ohmyfood-2" src="img/svg/logo-ohmyfood-2.svg" /></div>
+      </div>
+  </div>
+  <div class="superposition-2">
+    <h2 class="texte-wrapper-5">Restaurants</h2>
+    <div class="cadre">
+      <div class="carte-menu">
+        <a href="palette.html">
+          <img class="n" src="img/png/n-y88twmgwa-2.png" />
+          <div class="superposition-3">
+            <div class="badge-nouveau"><div class="texte-wrapper-6">Nouveau</div></div>
+          </div>
+          <div class="texte-wrapper-7">La palette du goût</div>
+          <div class="texte-wrapper-8">Ménilmontant</div>
+        </a>
+        <div class="svg-container">
+          <svg class="aimer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:rgb(147,86,220);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,121,217);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                  fill="url(#gradient)" stroke="url(#gradient)" />
+          </svg>
+          <svg class="aimer-vide" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                  fill="none" stroke="black" stroke-width="2"/>
+          </svg>
         </div>
       </div>
-      <div class="Reserver-Explorer">
-        <h2 class="Titre-Reserver">Réservez le menu qui vous convient</h2>
-        <p class="Sous-titre-Reserver">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-        <button class="bouton">Explorer nos restaurants</button>
+      <div class="carte-menu">
+        <a href="note.html">
+          <img class="n" src="img/png/n-y88twmgwa-1.png" />
+          <div class="superposition-3">
+            <div class="badge-nouveau"><div class="texte-wrapper-6">Nouveau</div></div>
+          </div>
+          <div class="texte-wrapper-7">La note enchantée</div>
+          <div class="texte-wrapper-8">Charonne</div>
+        </a>
+        <div class="svg-container">
+          <svg class="aimer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:rgb(147,86,220);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,121,217);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                  fill="url(#gradient)" stroke="url(#gradient)" />
+          </svg>
+          <svg class="aimer-vide" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                  fill="none" stroke="black" stroke-width="2"/>
+          </svg>
+        </div>
+      </div><div class="carte-menu">
+        <a href="francaise.html">
+          <img class="n" src="img/png/n-y88twmgwa-3.png" />
+          <div class="texte-wrapper-7">À la française</div>
+          <div class="texte-wrapper-8">Cité Rouge</div>
+        </a>
+        <div class="svg-container">
+          <svg class="aimer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:rgb(147,86,220);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,121,217);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                  fill="url(#gradient)" stroke="url(#gradient)" />
+          </svg>
+          <svg class="aimer-vide" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                  fill="none" stroke="black" stroke-width="2"/>
+          </svg>
+        </div>
+      </div><div class="carte-menu">
+        <a href="delice.html">
+          <img class="n" src="img/png/n-y88twmgwa-4.png" />
+          <div class="texte-wrapper-7">Le délice des sens</div>
+          <div class="texte-wrapper-8">Folie-Méricourt</div>
+        </a>
+        <div class="svg-container">
+          <svg class="aimer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:rgb(147,86,220);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,121,217);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                  fill="url(#gradient)" stroke="url(#gradient)" />
+          </svg>
+          <svg class="aimer-vide" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+                  fill="none" stroke="black" stroke-width="2"/>
+          </svg>
+        </div>
       </div>
-      <div class="superposition-blanc">
-        <div class="superposition">
-            <h2 class="fonctionnement">Fonctionnement</h2>
-            <div class="cartes">
-                  <div class="rectangle">
-                      <img class="icone" src="img/svg/mobile-screen-button.svg" alt="Icone Choisissez un restaurant"/>
-                      <div class="texte-wrapper">Choisissez un restaurant</div>
-                      <div class="num">1</div>
-                  </div>
-                  <div class="rectangle">
-                      <img class="icone" src="img/svg/list-ul.svg" alt="Icone Composez votre menu"/>
-                      <div class="texte-wrapper">Composez votre menu</div>
-                      <div class="num">2</div>
-                  </div>
-                  <div class="rectangle">
-                      <img class="icone" src="img/svg/store.svg" alt="Icone Dégustez au restaurant"/>
-                      <div class="texte-wrapper">Dégustez au restaurant</div>
-                      <div class="num">3</div>
-                  </div>
+    </div>
+  </div>
+  <footer class="pied-de-page">
+    <div class="footer-carde">
+        <img class="logo-ohmyfood" src="img/svg/logo-ohmyfood-3.svg" alt="Logo OhMyFood" />
+        <div class="liens">
+            <div class="div-2">
+                <div class="texte-wrapper-10">Proposer un restaurant</div>
+                <img class="vecteur" src="img/svg/vector-2.svg" alt="Vecteur" />
             </div>
-        </div>
-    </div>
-      <div class="superposition-2">
-        <h2 class="texte-wrapper-5">Restaurants</h2>
-        <div class="cadre">
-            <a href="palette.html" class="carte-menu">
-                <img class="n" src="img/png/n-y88twmgwa-2.png" />
-                <div class="superposition-3">
-                    <div class="badge-nouveau"><div class="texte-wrapper-6">Nouveau</div></div>
-                </div>
-                <div class="texte-wrapper-7">La palette du goût</div>
-                <div class="texte-wrapper-8">Ménilmontant</div>
-                <img class="aimer" src="img/svg/like-4.svg" />
-                <img class="aimer-2" src="img/svg/like-2.svg" />
-            </a>
-            <a href="note.html" class="carte-menu">
-                <img class="n" src="img/png/n-y88twmgwa-1.png" />
-                <div class="superposition-3">
-                    <div class="badge-nouveau"><div class="texte-wrapper-6">Nouveau</div></div>
-                </div>
-                <div class="texte-wrapper-7">La note enchantée</div>
-                <div class="texte-wrapper-8">Charonne</div>
-                <img class="aimer" src="img/svg/like-4.svg" />
-                <img class="aimer-2" src="img/svg/like-2.svg" />
-            </a>
-            <a href="francaise.html" class="carte-menu">
-                <img class="n" src="img/png/n-y88twmgwa-3.png" />
-                <div class="texte-wrapper-7">À la française</div>
-                <div class="texte-wrapper-8">Cité Rouge</div>
-                <img class="aimer" src="img/svg/like-4.svg" />
-                <img class="aimer-2" src="img/svg/like-2.svg" />
-            </a>
-            <a href="delice.html" class="carte-menu">
-                <img class="n" src="img/png/n-y88twmgwa-4.png" />
-                <div class="texte-wrapper-7">Le délice des sens</div>
-                <div class="texte-wrapper-8">Folie-Méricourt</div>
-                <img class="aimer" src="img/svg/like-4.svg" />
-                <img class="aimer-2" src="img/svg/like-2.svg" />
-            </a>
-        </div>
-    </div>
-      <footer class="pied-de-page">
-        <div class="footer-carde">
-            <img class="logo-ohmyfood" src="img/svg/logo-ohmyfood-3.svg" alt="Logo OhMyFood" />
-            <div class="liens">
-                <div class="div-2">
-                    <div class="texte-wrapper-10">Proposer un restaurant</div>
-                    <img class="vecteur" src="img/svg/vector-2.svg" alt="Vecteur" />
-                </div>
-                <div class="div-2">
-                    <div class="texte-wrapper-10">Devenir partenaire</div>
-                    <img class="vecteur-2" src="img/svg/vector-3.svg" alt="Vecteur 2" />
-                </div>
-                <div class="texte-wrapper-11">Mentions légales</div>
-                <a href="mailto:votreadresse@mail.fr" class="btncontact">Contacte</a>
+            <div class="div-2">
+                <div class="texte-wrapper-10">Devenir partenaire</div>
+                <img class="vecteur-2" src="img/svg/vector-3.svg" alt="Vecteur 2" />
             </div>
+            <div class="texte-wrapper-11">Mentions légales</div>
+            <a href="mailto:votreadresse@mail.fr" class="btncontact">Contact</a>
         </div>
-    </footer>
     </div>
-  </body>
+</footer>
+</div>
+</body>
 </html>
