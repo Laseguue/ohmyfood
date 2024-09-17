@@ -33,7 +33,7 @@
 
 body {
   margin: 0;
-  background-color: rgb(246, 246, 246);
+  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,7 @@ a {
   height: 1.25rem;
   font-family: "Roboto", Helvetica;
   font-weight: 400;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: normal;
@@ -70,7 +70,7 @@ a {
 
 .page-daccueil .pied-de-page {
   width: 100%;
-  background-color: rgb(53, 53, 53);
+  background-color: #353535;
 }
 
 .page-daccueil .footer-carde {
@@ -111,7 +111,7 @@ a {
   left: 1.375rem;
   font-family: "Roboto", Helvetica;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: normal;
@@ -138,7 +138,7 @@ a {
   height: 1.25rem;
   font-family: "Roboto", Helvetica;
   font-weight: 400;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: normal;
@@ -152,8 +152,8 @@ a {
 
 .page-daccueil .en-tête-2 {
   height: 3.9375rem;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1490196078);
   position: relative;
   width: 100%;
   display: flex;
@@ -187,8 +187,8 @@ a {
 .menu-container {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgb(246, 246, 246);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1490196078);
+  background-color: #F6F6F6;
   padding: 15px;
   margin-top: -5%;
   display: flex;
@@ -207,7 +207,7 @@ a {
 }
 
 .menu-title {
-  color: #101010;
+  color: #000;
   font-size: 26px;
   font-family: Shrikhand;
   font-weight: 400;
@@ -223,7 +223,7 @@ a {
 }
 
 .section-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Helvetica;
   font-weight: 500;
   margin-bottom: 10px;
   padding-bottom: 5px;
@@ -245,7 +245,7 @@ a {
   height: 62px;
   border-radius: 20px;
   background: var(--Background, #F6F6F6);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -332,9 +332,9 @@ a {
 }
 
 .dish-title {
-  color: black;
+  color: #000;
   font-size: 15px;
-  font-family: Roboto;
+  font-family: "Roboto", Helvetica;
   font-weight: 500;
   word-wrap: break-word;
   margin-bottom: 7px;
@@ -343,9 +343,9 @@ a {
 }
 
 .dish-description {
-  color: black;
+  color: #000;
   font-size: 15.04px;
-  font-family: Roboto;
+  font-family: "Roboto", Helvetica;
   font-weight: 300;
   word-wrap: break-word;
   overflow: hidden;
@@ -357,7 +357,7 @@ a {
   text-align: end;
   color: #353535;
   font-size: 15.04px;
-  font-family: Roboto;
+  font-family: "Roboto", Helvetica;
   font-weight: 700;
   word-wrap: break-word;
   position: relative;
@@ -377,11 +377,11 @@ a {
   width: 186px;
   height: 50px;
   border-radius: 1.5625rem;
-  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
-  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 217) 100%);
+  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.1490196078);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79D9 100%);
   font-family: "Roboto", Helvetica;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   text-align: center;
   letter-spacing: 0;
@@ -391,8 +391,8 @@ a {
 }
 
 .btn-commander:hover {
-  background: linear-gradient(180deg, rgb(151, 99, 214) 0%, rgb(253, 151, 224) 100%);
-  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79D9 100%);
+  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.1490196078);
 }
 
 @media (min-width: 575px) {
@@ -437,14 +437,13 @@ a {
     height: 62px;
     border-radius: 20px;
     background: var(--Background, #F6F6F6);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
     padding: 10px;
     display: flex;
     flex-direction: row;
     position: relative;
     overflow: hidden;
     transition: all 1s ease;
-    overflow: hidden;
     text-overflow: ellipsis;
   }
   .menu-item::after {
@@ -467,7 +466,7 @@ a {
     width: 20%;
     right: 0;
   }
-  .menu-item:hover .dish-info {
+  .menu-item .dish-info {
     width: 60%;
     transition: width 1s ease;
   }
@@ -485,17 +484,17 @@ a {
     width: 80%;
   }
   .dish-title {
-    color: black;
+    color: #000;
     font-size: 15px;
-    font-family: Roboto;
+    font-family: "Roboto", Helvetica;
     font-weight: 500;
     word-wrap: break-word;
     margin-bottom: 7px;
   }
   .dish-description {
-    color: black;
+    color: #000;
     font-size: 14px;
-    font-family: Roboto;
+    font-family: "Roboto", Helvetica;
     font-weight: 300;
     word-wrap: break-word;
     overflow: hidden;
@@ -506,7 +505,7 @@ a {
     text-align: end;
     color: #353535;
     font-size: 15.04px;
-    font-family: Roboto;
+    font-family: "Roboto", Helvetica;
     font-weight: 700;
     word-wrap: break-word;
     position: relative;

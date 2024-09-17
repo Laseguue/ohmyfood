@@ -5,7 +5,6 @@
 
 body {
   margin: 0;
-  background-color: rgb(246, 246, 246);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +17,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +25,7 @@ body {
 }
 
 .spinner {
-  border: 16px solid #f3f3f3;
+  border: 16px solid #F6F6F6;
   border-top: 16px solid #9356DC;
   border-radius: 50%;
   width: 120px;
@@ -75,7 +73,7 @@ a {
   height: 1.25rem;
   font-family: "Roboto", Helvetica;
   font-weight: 400;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: normal;
@@ -83,7 +81,7 @@ a {
 
 .page-daccueil {
   margin: 0;
-  background-color: rgb(246, 246, 246);
+  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,14 +89,11 @@ a {
 }
 
 .page-daccueil .div {
-  background-color: rgb(246, 246, 246);
   width: 23.4375rem;
   min-height: 140.75rem;
 }
 
 .page-daccueil .superposition-blanc {
-  background: var(--White, #FFF);
-  /* padding: 15px; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -115,13 +110,8 @@ a {
 }
 
 .page-daccueil .superposition-blanc {
-  background: var(--White, #FFF);
-  /* padding: 15px; */
+  background: #FFFFFF;
   width: 100%;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
 }
 
 .page-daccueil .superposition {
@@ -132,15 +122,13 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   padding: 15px;
 }
 
 .page-daccueil .fonctionnement {
-  /* display: flex; */
   text-align: left;
   color: #000;
-  font-family: Roboto;
+  font-family: "Roboto", Helvetica;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
@@ -160,31 +148,28 @@ a {
   align-items: center;
   text-align: center;
   position: relative;
-  width: 100%; /* Largeur de la carte en mode colonne */
+  width: 100%;
 }
 
 .page-daccueil .rectangle {
   width: 100%;
-  /* flex: 20%; */
   height: 73px;
   border-radius: 20px;
   background: var(--Background, #F6F6F6);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1490196078);
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   position: relative;
-  /* min-width: 300px; */
   padding-left: 25px;
 }
 
 .cartes .rectangle .icone {
-  filter: grayscale(100%); /* Toutes les icônes sont grisées par défaut */
+  filter: grayscale(100%);
   transition: filter 0.3s ease-in-out;
 }
 
 .cartes .rectangle:hover .icone {
-  filter: none; /* Retour à la couleur originale (violet) au survol */
+  filter: none;
 }
 
 .page-daccueil .texte-wrapper {
@@ -199,10 +184,9 @@ a {
 
 .page-daccueil .num {
   position: absolute;
-  /* top: -10px; */
   left: -12px;
-  background-color: rgb(147, 86, 220);
-  color: #FFF;
+  background-color: #9356DC;
+  color: #FFFFFF;
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
@@ -229,7 +213,7 @@ a {
   left: 4rem;
   font-family: "Roboto", Helvetica;
   font-weight: 500;
-  color: #000000;
+  color: #000;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: normal;
@@ -237,7 +221,7 @@ a {
 }
 
 .page-daccueil .texte-wrapper-4 {
-  color: rgb(246, 246, 246);
+  color: #F6F6F6;
   position: absolute;
   width: 0.9375rem;
   top: 0.3125rem;
@@ -287,7 +271,7 @@ a {
   left: 0.1875rem;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   font-size: 1.5rem;
   letter-spacing: 0;
   line-height: normal;
@@ -311,10 +295,10 @@ a {
   flex: 40% 1 1;
   min-width: 300px;
   height: 15.6875rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #FFFFFF;
   border-radius: 0.9375rem;
   overflow: hidden;
-  box-shadow: 0 0.25rem 0.9375rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.9375rem 0 rgba(0, 0, 0, 0.1490196078);
 }
 
 .page-daccueil .badge-nouveau-wrapper {
@@ -332,9 +316,9 @@ a {
   width: 5rem;
   height: 1.8125rem;
   top: 0.8125rem;
-  background-color: rgb(153, 226, 208);
+  background-color: #99E2D0;
   border-radius: 0.125rem;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1490196078);
 }
 
 .page-daccueil .texte-wrapper-6 {
@@ -344,7 +328,7 @@ a {
   left: 0.5625rem;
   font-family: "Roboto", Helvetica;
   font-weight: 500;
-  color: rgb(0, 135, 102);
+  color: #008766;
   font-size: 0.875rem;
   text-align: center;
   letter-spacing: 0;
@@ -358,7 +342,7 @@ a {
   left: 0.8125rem;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   font-size: 1.125rem;
   letter-spacing: 0;
   line-height: normal;
@@ -372,7 +356,7 @@ a {
   left: 0.8125rem;
   font-family: "Roboto", Helvetica;
   font-weight: 300;
-  color: #000000;
+  color: #000;
   font-size: 1.0625rem;
   letter-spacing: 0;
   line-height: normal;
@@ -425,7 +409,7 @@ a {
   flex-shrink: 0;
   color: #000;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto", Helvetica;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -439,7 +423,7 @@ a {
   text-align: center;
   height: 47px;
   font-size: 18px;
-  font-family: Roboto;
+  font-family: "Roboto", Helvetica;
   font-weight: 300;
   word-wrap: break-word;
   margin-bottom: 15px;
@@ -451,19 +435,19 @@ a {
   width: 13.625rem;
   height: 3.125rem;
   border-radius: 1.5625rem;
-  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
-  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 217) 100%);
+  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.1490196078);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79D9 100%);
   font-family: "Roboto", Helvetica;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   text-align: center;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .page-daccueil .bouton:hover {
-  background: linear-gradient(180deg, rgb(151, 99, 214) 0%, rgb(253, 151, 224) 100%);
-  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79D9 100%);
+  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.1490196078);
 }
 
 .page-daccueil .texte-wrapper-9 {
@@ -474,7 +458,7 @@ a {
   left: 1.1875rem;
   font-family: "Roboto", Helvetica;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   text-align: center;
   letter-spacing: 0;
@@ -484,7 +468,7 @@ a {
 
 .page-daccueil .pied-de-page {
   width: 100%;
-  background-color: rgb(53, 53, 53);
+  background-color: #353535;
 }
 
 .page-daccueil .footer-carde {
@@ -525,7 +509,7 @@ a {
   left: 1.375rem;
   font-family: "Roboto", Helvetica;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: normal;
@@ -582,7 +566,7 @@ a {
   height: 1.25rem;
   font-family: "Roboto", Helvetica;
   font-weight: 400;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: normal;
@@ -611,8 +595,8 @@ a {
   position: absolute;
   top: 3.875rem;
   left: 0;
-  background-color: rgb(234, 234, 234);
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2509803922);
+  background-color: #eaeaea;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1490196078);
 }
 
 .page-daccueil .icône-épingle {
@@ -627,7 +611,7 @@ a {
   width: fit-content;
   font-family: "Roboto", Helvetica;
   font-weight: 500;
-  color: rgb(53, 53, 53);
+  color: #353535;
   font-size: 1rem;
   letter-spacing: 0;
   line-height: normal;
@@ -637,8 +621,8 @@ a {
 
 .page-daccueil .en-tête-2 {
   height: 3.9375rem;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1490196078);
   position: absolute;
   width: 100%;
   display: flex;
@@ -670,11 +654,10 @@ a {
   }
   .page-daccueil .cartes {
     flex-direction: row;
-    /* flex-wrap: wrap; */
   }
   .page-daccueil .carte {
-    flex: 33% 1 1; /* Les cartes s'étendent également */
-    max-width: calc(33.333% - 16.66px); /* Gérer l'espacement entre les cartes */
+    flex: 33% 1 1;
+    max-width: calc(33.333% - 16.66px);
   }
 }
 @media (max-width: 647px) {

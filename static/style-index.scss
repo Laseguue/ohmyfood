@@ -1,23 +1,24 @@
+@import 'variables-colors';
+@import 'variables-various';
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: rgba(246, 246, 246, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: $width-max;
 }
 
 .loader {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: $width-max;
   height: 100%;
-  background: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +27,8 @@ body {
 }
 
 .spinner {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #9356DC;
+  border: 16px solid $off-white;
+  border-top: 16px solid $purple;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -62,33 +63,30 @@ a {
   text-decoration: none;
   width: 8.125rem;
   height: 1.25rem;
-  font-family: "Roboto", Helvetica;
+  font-family: $font;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  font-size: 1rem;
+  color: $white;
+  font-size: $font-size;
   letter-spacing: 0;
   line-height: normal;
 }
 
 .page-daccueil {
   margin: 0;
-  background-color: rgba(246, 246, 246, 1);
+  background-color: $off-white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: $width-max;
 }
 
 .page-daccueil .div {
-  background-color: rgba(246, 246, 246, 1);
   width: 23.4375rem;
   min-height: 140.75rem;
 }
 
 .page-daccueil .superposition-blanc {
-  background: var(--White, #FFF);
-  /* padding: 15px; */
-  width: 100%;
+  width: $width-max;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,32 +102,25 @@ a {
 }
 
 .page-daccueil .superposition-blanc {
-  background: var(--White, #FFF);
-  /* padding: 15px; */
-  width: 100%;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
+  background: $white;
+  width: $width-max;
 }
 
 .page-daccueil .superposition {
   margin-top: 1rem;
   margin-bottom: 2rem;
   max-width: 1080px;
-  width: 100%;
+  width: $width-max;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   padding: 15px;
 }
 
 .page-daccueil .fonctionnement {
-  /* display: flex; */
   text-align: left;
-  color: #000;
-  font-family: Roboto;
+  color: $black;
+  font-family: $font;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
@@ -139,7 +130,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 100%;
+  width: $width-max;
   justify-content: center;
 }
 
@@ -149,63 +140,59 @@ a {
   align-items: center;
   text-align: center;
   position: relative;
-  width: 100%; /* Largeur de la carte en mode colonne */
+  width: $width-max;
 }
 
 .page-daccueil .rectangle {
-  width: 100%;
-  /* flex: 20%; */
+  width: $width-max;
   height: 73px;
   border-radius: 20px;
-  background: var(--Background, #F6F6F6);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  background: var(--Background, $off-white);
+  box-shadow: 0px 4px 15px $shadow-border-box;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   position: relative;
-  /* min-width: 300px; */
   padding-left: 25px;
 }
 
 .cartes .rectangle .icone {
-  filter: grayscale(100%); /* Toutes les icônes sont grisées par défaut */
+  filter: grayscale(100%);
   transition: filter 0.3s ease-in-out;
 }
 
 .cartes .rectangle:hover .icone {
-  filter: none; /* Retour à la couleur originale (violet) au survol */
+  filter: none;
 }
 
 .page-daccueil .texte-wrapper {
   margin-left: 25px;
   margin-top: 5px;
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
-  color: #000;
-  font-size: 1rem;
-  width: 100%;
+  font-family: $font;
+  font-weight: $font-weight;
+  color: $black;
+  font-size: $font-size;
+  width: $width-max;
 }
 
 .page-daccueil .num {
   position: absolute;
-  /* top: -10px; */
   left: -12px;
-  background-color: rgba(147, 86, 220, 1);
-  color: #FFF;
+  background-color: $purple;
+  color: $white;
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
+  font-family: $font;
+  font-weight: $font-weight;
   font-size: 0.8875rem;
   padding-top: 3px;
 }
 
 .page-daccueil .icone {
-  fill: #7E7E7E;
+  fill: $icone-color;
   margin-top: 5px;
   width: 24px;
   height: 24px;
@@ -216,23 +203,23 @@ a {
   width: 13.1875rem;
   top: 1.75rem;
   left: 4rem;
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 1rem;
+  font-family: $font;
+  font-weight: $font-weight;
+  color: $black;
+  font-size: $font-size;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
 .page-daccueil .texte-wrapper-4 {
-  color: rgba(246, 246, 246, 1);
+  color: $off-white;
   position: absolute;
   width: 0.9375rem;
   top: 0.3125rem;
   left: 0.5rem;
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
+  font-family: $font;
+  font-weight: $font-weight;
   font-size: 0.8875rem;
   letter-spacing: 0;
   line-height: normal;
@@ -274,9 +261,9 @@ a {
 .page-daccueil .texte-wrapper-5 {
   padding-top: 10px; 
   left: 0.1875rem;
-  font-family: "Roboto", Helvetica;
+  font-family: $font;
   font-weight: 700;
-  color: #000000;
+  color: $black;
   font-size: 1.5rem;
   letter-spacing: 0;
   line-height: normal;
@@ -286,7 +273,7 @@ a {
 
 .page-daccueil .cadre {
   display: flex;
-  width: 100%;
+  width: $width-max;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -301,10 +288,10 @@ a {
   flex: 40% 1 1;
   min-width: 300px;
   height: 15.6875rem;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $white;
   border-radius: 0.9375rem;
   overflow: hidden;
-  box-shadow: 0 0.25rem 0.9375rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.9375rem 0 $shadow-border-box;
 }
 
 .page-daccueil .badge-nouveau-wrapper {
@@ -322,9 +309,9 @@ a {
   width: 5rem;
   height: 1.8125rem;
   top: 0.8125rem;
-  background-color: rgba(153, 226, 208, 1);
+  background-color: $turquoise;
   border-radius: 0.125rem;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.125rem 0.25rem 0 $shadow-border-box;
 }
 
 .page-daccueil .texte-wrapper-6 {
@@ -332,9 +319,9 @@ a {
   width: 3.8125rem;
   top: 0.375rem;
   left: 0.5625rem;
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
-  color: rgba(0, 135, 102, 1);
+  font-family: $font;
+  font-weight: $font-weight;
+  color: $green;
   font-size: 0.875rem;
   text-align: center;
   letter-spacing: 0;
@@ -346,9 +333,9 @@ a {
   width: 16.6875rem;
   top: 11.8125rem;
   left: 0.8125rem;
-  font-family: "Roboto", Helvetica;
+  font-family: $font;
   font-weight: 700;
-  color: #000000;
+  color: $black;
   font-size: 1.125rem;
   letter-spacing: 0;
   line-height: normal;
@@ -360,9 +347,9 @@ a {
   width: 15.4375rem;
   top: 13.375rem;
   left: 0.8125rem;
-  font-family: "Roboto", Helvetica;
+  font-family: $font;
   font-weight: 300;
-  color: #000000;
+  color: $black;
   font-size: 1.0625rem;
   letter-spacing: 0;
   line-height: normal;
@@ -386,7 +373,7 @@ a {
 }
 
 .page-daccueil .n {
-  width: 100%;
+  width: $width-max;
   height: 10.875rem;
   top: 0;
   left: 0;
@@ -405,7 +392,7 @@ a {
   align-items: center;
   padding: 15px;
   margin-top: 10px;
-  width: 100%;
+  width: $width-max;
   display: flex;
   flex-direction: column;
 }
@@ -413,9 +400,9 @@ a {
 .Titre-Reserver {
   height: 47px;
   flex-shrink: 0;
-  color: #000;
+  color: $black;
   text-align: center;
-  font-family: Roboto;
+  font-family: $font;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -423,12 +410,12 @@ a {
   margin-bottom: 15px;
 }
 .Sous-titre-Reserver{
-  color: #000;
+  color: $black;
   flex-shrink: 0;
   text-align: center;
   height: 47px;
   font-size: 18px;
-  font-family: Roboto;
+  font-family: $font;
   font-weight: 300;
   word-wrap: break-word;
   margin-bottom: 15px;
@@ -440,19 +427,19 @@ a {
   width: 13.625rem;
   height: 3.125rem;
   border-radius: 1.5625rem;
-  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.25);
-  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 217) 100%);
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  font-size: 1rem;
+  box-shadow: 0 0.25rem 0.625rem 0 $shadow-border-box;
+  background: linear-gradient(180deg, $purple 0%, $pink 100%);
+  font-family: $font;
+  font-weight: $font-weight;
+  color: $white;
+  font-size: $font-size;
   text-align: center;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .page-daccueil .bouton:hover {
-  background: linear-gradient(180deg, rgb(151, 99, 214) 0%, rgb(253, 151, 224) 100%);
-  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180deg, $purple 0%, $pink 100%);
+  box-shadow: 0 0.5rem 1.25rem 0 $shadow-border-box;
 }
 
 .page-daccueil .texte-wrapper-9 {
@@ -461,10 +448,10 @@ a {
   height: 1.5rem;
   top: 0.75rem;
   left: 1.1875rem;
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  font-size: 1rem;
+  font-family: $font;
+  font-weight: $font-weight;
+  color: $white;
+  font-size: $font-size;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
@@ -472,8 +459,8 @@ a {
 }
 
 .page-daccueil .pied-de-page {
-  width: 100%;
-  background-color: rgba(53, 53, 53, 1);
+  width: $width-max;
+  background-color: $anthracite;
 }
 
 .page-daccueil .footer-carde {
@@ -512,10 +499,10 @@ a {
   width: 10.5rem;
   top: 0;
   left: 1.375rem;
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 1);
-  font-size: 1rem;
+  font-family: $font;
+  font-weight: $font-weight;
+  color: $white;
+  font-size: $font-size;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -548,7 +535,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: $width-max;
   height: 100%;
   transition: opacity 0.5s ease-in-out;
 }
@@ -569,10 +556,10 @@ a {
 .page-daccueil .texte-wrapper-11 {
   width: 8.125rem;
   height: 1.25rem;
-  font-family: "Roboto", Helvetica;
+  font-family: $font;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  font-size: 1rem;
+  color: $white;
+  font-size: $font-size;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -580,19 +567,19 @@ a {
 .page-daccueil .en-tête {
   height: 7.0625rem;
   position: relative;
-  width: 100%;
+  width: $width-max;
   display: flex;
 }
 
 .page-daccueil .superposition-4 {
   position: relative;
-  width: 100%;
+  width: $width-max;
   height: 7rem;
 }
 
 .page-daccueil .emplacement {
   display: flex;
-  width: 100%;
+  width: $width-max;
   height: 3.125rem;
   align-items: center;
   justify-content: center;
@@ -600,8 +587,8 @@ a {
   position: absolute;
   top: 3.875rem;
   left: 0;
-  background-color: rgba(234, 234, 234, 1);
-  box-shadow: 0 0.25rem 0.25rem #00000040;
+  background-color: $location;
+  box-shadow: 0 0.25rem 0.25rem $shadow-border-box;
 }
 
 .page-daccueil .icône-épingle {
@@ -613,10 +600,10 @@ a {
 .page-daccueil .texte-wrapper-12 {
   position: relative;
   width: fit-content;
-  font-family: "Roboto", Helvetica;
-  font-weight: 500;
-  color: rgba(53, 53, 53, 1);
-  font-size: 1rem;
+  font-family: $font;
+  font-weight: $font-weight;
+  color: $location-text;
+  font-size: $font-size;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
@@ -625,10 +612,10 @@ a {
 
 .page-daccueil .en-tête-2 {
   height: 3.9375rem;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  background-color: $white;
+  box-shadow: 0 0.125rem 0.25rem 0 $shadow-border-box;
   position: absolute;
-  width: 100%;
+  width: $width-max;
   display: flex;
   justify-content: center;
 }
@@ -662,12 +649,11 @@ a {
 
   .page-daccueil .cartes {
     flex-direction: row;
-    /* flex-wrap: wrap; */
   }
 
   .page-daccueil .carte {
-    flex: 33% 1 1; /* Les cartes s'étendent également */
-    max-width: calc(33.333% - 16.66px); /* Gérer l'espacement entre les cartes */
+    flex: 33% 1 1; 
+    max-width: calc(33.333% - 16.66px); 
   }
 }
 

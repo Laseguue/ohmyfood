@@ -1,0 +1,63 @@
+.pied-de-page {
+  width: 100%;
+  background-color: #353535;
+}
+
+.footer-carde {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.logo-ohmyfood {
+  flex: 1 1 100%;
+  max-width: 8.6875rem;
+  margin-bottom: 1rem;
+}
+
+.liens {
+  display: flex;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.4375rem;
+}
+
+.bouton {
+  all: unset;
+  box-sizing: border-box;
+  border-radius: 1.5625rem;
+  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.1490196078);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79D9 100%);
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bouton:hover {
+  background: linear-gradient(180deg, #9356DC 0%, #FF79D9 100%);
+  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.1490196078);
+}
+
+.bouton-large {
+  width: 186px;
+  height: 50px;
+}
+
+.bouton-small {
+  width: 13.625rem;
+  height: 3.125rem;
+}
+
+.svg-container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}/*# sourceMappingURL=common.css.map */
