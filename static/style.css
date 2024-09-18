@@ -467,7 +467,7 @@ a {
     right: 0;
   }
   .menu-item .dish-info {
-    width: 60%;
+    width: 80%;
     transition: width 1s ease;
   }
   .menu-item:hover .dish-container {
